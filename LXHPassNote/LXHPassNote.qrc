@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/LXHPassNote">
+        <file>Resources/black.qss</file>
+        <file>Resources/white.qss</file>
+    </qresource>
+</RCC>
