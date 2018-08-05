@@ -30,12 +30,11 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLineEdit *lineEdit_login_user;
-    QLineEdit *lineEdit_login_user_2;
+    QLineEdit *lineEdit_login_passwd;
     QCheckBox *checkBox_login_showPasswd;
     QPushButton *pushButton_login_do;
     QCheckBox *checkBox_login_savePasswd;
     QLabel *label_login_status;
-    QLabel *label_3;
 
     void setupUi(QMainWindow *LXHPassNoteClass)
     {
@@ -43,7 +42,7 @@ public:
             LXHPassNoteClass->setObjectName(QStringLiteral("LXHPassNoteClass"));
         LXHPassNoteClass->setWindowModality(Qt::WindowModal);
         LXHPassNoteClass->setEnabled(true);
-        LXHPassNoteClass->resize(419, 155);
+        LXHPassNoteClass->resize(436, 231);
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -69,9 +68,9 @@ public:
         lineEdit_login_user = new QLineEdit(centralWidget);
         lineEdit_login_user->setObjectName(QStringLiteral("lineEdit_login_user"));
         lineEdit_login_user->setGeometry(QRect(150, 20, 131, 21));
-        lineEdit_login_user_2 = new QLineEdit(centralWidget);
-        lineEdit_login_user_2->setObjectName(QStringLiteral("lineEdit_login_user_2"));
-        lineEdit_login_user_2->setGeometry(QRect(150, 60, 131, 21));
+        lineEdit_login_passwd = new QLineEdit(centralWidget);
+        lineEdit_login_passwd->setObjectName(QStringLiteral("lineEdit_login_passwd"));
+        lineEdit_login_passwd->setGeometry(QRect(150, 60, 131, 21));
         checkBox_login_showPasswd = new QCheckBox(centralWidget);
         checkBox_login_showPasswd->setObjectName(QStringLiteral("checkBox_login_showPasswd"));
         checkBox_login_showPasswd->setGeometry(QRect(290, 65, 81, 16));
@@ -83,11 +82,8 @@ public:
         checkBox_login_savePasswd->setGeometry(QRect(290, 20, 81, 16));
         label_login_status = new QLabel(centralWidget);
         label_login_status->setObjectName(QStringLiteral("label_login_status"));
-        label_login_status->setGeometry(QRect(60, 130, 291, 16));
-        label_login_status->setAlignment(Qt::AlignCenter);
-        label_3 = new QLabel(centralWidget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(10, 80, 54, 12));
+        label_login_status->setGeometry(QRect(60, 130, 291, 61));
+        label_login_status->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
         LXHPassNoteClass->setCentralWidget(centralWidget);
 
         retranslateUi(LXHPassNoteClass);
@@ -104,7 +100,6 @@ public:
         pushButton_login_do->setText(QApplication::translate("LXHPassNoteClass", "\347\231\273\351\231\206", nullptr));
         checkBox_login_savePasswd->setText(QApplication::translate("LXHPassNoteClass", "\350\256\260\344\275\217\345\257\206\347\240\201", nullptr));
         label_login_status->setText(QString());
-        label_3->setText(QApplication::translate("LXHPassNoteClass", "TextLabel", nullptr));
     } // retranslateUi
 
 };

@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>419</width>
-    <height>155</height>
+    <width>436</width>
+    <height>231</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -96,7 +96,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_login_user_2">
+   <widget class="QLineEdit" name="lineEdit_login_passwd">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -151,14 +151,14 @@
       <x>60</x>
       <y>130</y>
       <width>291</width>
-      <height>16</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
     </property>
    </widget>
   </widget>

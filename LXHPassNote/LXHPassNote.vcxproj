@@ -116,6 +116,7 @@
   <ItemGroup>
     <ClCompile Include="LXHPassNote.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="modules\sendData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LXHPassNote.h" />
@@ -129,6 +130,9 @@
   <ItemGroup>
     <None Include="Resources\black.qss" />
     <None Include="Resources\white.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="modules\sendData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

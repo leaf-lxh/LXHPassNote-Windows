@@ -28,6 +28,9 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{c3d8eef4-f65c-43a1-a54f-f5cf4d4105fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="LXHPassNote.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\sendData.cpp">
+      <Filter>modules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,5 +65,10 @@
     <None Include="Resources\white.qss">
       <Filter>Header Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="modules\sendData.h">
+      <Filter>modules</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
