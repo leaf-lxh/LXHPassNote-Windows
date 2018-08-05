@@ -1,4 +1,4 @@
-#include "sendData.h"
+ï»¿#include "sendData.h"
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 
@@ -18,7 +18,7 @@ size_t SendData::SendRequest(std::string & data, std::string & receiveBuffer)
 
 	if (connect(socketFD, (sockaddr*)&server_addr, sizeof(server_addr)))
 	{
-		OutputDebugStringA("connectÊ§°Ü\n");
+		OutputDebugStringA("connectå¤±è´¥\n");
 		this->lastErrorCode = WSAGetLastError();
 		closesocket(socketFD);
 		WSACleanup();
@@ -42,7 +42,7 @@ size_t SendData::SendRequest(std::string & data, std::string & receiveBuffer)
 		
 		if (sendedLength < 0)
 		{
-			OutputDebugStringA("sendÊ§°Ü\n");
+			OutputDebugStringA("sendå¤±è´¥\n");
 			this->lastErrorCode = WSAGetLastError();
 			closesocket(socketFD);
 			WSACleanup();
